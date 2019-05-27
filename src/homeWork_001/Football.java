@@ -1,4 +1,4 @@
-package lesson_001.Task_1_1;
+package homeWork_001;
 
 public class Football {
 

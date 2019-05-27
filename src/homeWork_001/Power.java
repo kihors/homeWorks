@@ -1,4 +1,4 @@
-package lesson_001.Task_1_3;
+package homeWork_001;
 
 public class Power {
 

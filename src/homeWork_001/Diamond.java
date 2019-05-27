@@ -1,4 +1,4 @@
-package lesson_001.Task_1_2;
+package homeWork_001;
 
 public class Diamond {
     public static void main(String[] args) {
