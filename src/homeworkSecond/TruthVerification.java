@@ -9,7 +9,8 @@ public class TruthVerification {
 
     private static boolean booleanExpression(boolean firstArgument, boolean secondArgument,
                                              boolean thirdArgument, boolean fourthArgument) {
-        return (firstArgument ? 1 : 0) + (secondArgument ? 1 : 0) +
-                (thirdArgument ? 1 : 0) + (fourthArgument ? 1 : 0) == 2;
+        return (firstArgument | secondArgument | thirdArgument | fourthArgument) &&
+                !(firstArgument & secondArgument & thirdArgument & fourthArgument) &&
+                !(firstArgument ^ secondArgument ^ thirdArgument ^ fourthArgument);
     }
 }

@@ -3,7 +3,7 @@ package homeworkSecond;
 public class CheckingExpression {
 
     public static void main(String[] args) {
-        System.out.println(doubleExpression(2.02, 5.03, 7.05));
+        System.out.println(doubleExpression(3.02, 5.03, 8.05));
     }
 
     private static final double permissibleError = 0.0001;
