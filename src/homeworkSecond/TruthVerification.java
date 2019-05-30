@@ -1,4 +1,4 @@
-package homeWorkSecond;
+package homeworkSecond;
 
 public class TruthVerification {
 
