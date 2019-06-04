@@ -54,4 +54,37 @@ public class Car implements Cloneable {
     public void setPower(int power) {
         this.power = power;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", fuel='" + fuel + '\'' +
+                ", speed=" + speed +
+                ", power=" + power +
+                '}';
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return (Car) super.clone();
+    }
+
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Car myCar = new Car("Toyota", "red", "gas", 240, 150);
+        Car otherCar = new Car("BMW", "black", "diesel", 210, 110);
+
+        Car cloneMyCar = (Car) myCar.clone();
+        Car cloneOtherCar = (Car) otherCar.clone();
+
+        cloneOtherCar.setColor("blue");
+        cloneMyCar.setPower(120);
+
+        System.out.println(myCar);
+        System.out.println(cloneMyCar);
+        System.out.println("//////////////////////////////////////////////////////////////////");
+        System.out.println(otherCar);
+        System.out.println(cloneOtherCar);
+    }
 }
