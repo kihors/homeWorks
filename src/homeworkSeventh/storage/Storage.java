@@ -1,13 +1,13 @@
 package homeworkSeventh.storage;
 
-public class Container <T, V> {
+public class Storage<T, V> {
     private T key;
     private V value;
 
-    public Container() {
+    public Storage() {
     }
 
-    public Container(T key, V value) {
+    public Storage(T key, V value) {
         this.key = key;
         this.value = value;
     }
