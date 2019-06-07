@@ -10,10 +10,12 @@ public class Storage<T, V> {
     }
 
     public V get(T key) {
-        for (int i = 0; i < this.key.size(); i++) {
+        int i = 0;
+        while (i < this.key.size()) {
             if (this.key.get(i) == key) {
                 return this.value.get(i);
             }
+            i++;
         }
         return null;
     }
