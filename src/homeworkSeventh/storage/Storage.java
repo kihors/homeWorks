@@ -1,23 +1,25 @@
 package homeworkSeventh.storage;
 
+import java.util.ArrayList;
+
 public class Storage<T, V> {
-    private T key;
-    private V value;
+    private ArrayList<T> key = new ArrayList<>();
+    private ArrayList<V> value = new ArrayList<>();
 
     public Storage() {
     }
 
-    public Storage(T key, V value) {
-        this.key = key;
-        this.value = value;
-    }
-
     public V get(T key) {
-        return value;
+        for (int i = 0; i < this.key.size(); i++) {
+            if (this.key.get(i) == key) {
+                return this.value.get(i);
+            }
+        }
+        return null;
     }
 
     public void put(T key, V value) {
-        this.key = key;
-        this.value = value;
+        this.key.add(key);
+        this.value.add(value);
     }
 }
