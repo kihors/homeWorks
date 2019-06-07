@@ -2,7 +2,7 @@ package homeworkSeventh;
 
 import java.util.Objects;
 
-public class Pair<T, V> {
+class Pair<T, V> {
     private final T firstValue;
     private final V secondValue;
 
