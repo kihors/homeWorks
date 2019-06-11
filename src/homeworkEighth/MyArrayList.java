@@ -43,24 +43,26 @@ public class MyArrayList<T> implements List<T> {
 
     @Override
     public T get(int index) {
-        return (T) array[index];
+        if (indexOutOfBounds(index)) {
+            return array[index];
+        }
+        return null;
     }
 
     @Override
     public void set(T value, int index) {
         if (indexOutOfBounds(index)) {
             array[index] = value;
-        } else {
-            array[index] = null;
         }
+        array[index] = null;
     }
 
     @Override
     public T remove(int index) {
         if (!indexOutOfBounds(index)) {
-            T deletElement = array[index];
+            T deleteElement = array[index];
             remover(index);
-            return deletElement;
+            return deleteElement;
         }
         return null;
     }
