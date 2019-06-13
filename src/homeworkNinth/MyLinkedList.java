@@ -1,5 +1,7 @@
 package homeworkNinth;
 
+import java.util.NoSuchElementException;
+
 public class MyLinkedList<T> implements List<T> {
 
     private Node<T> first;
@@ -8,23 +10,21 @@ public class MyLinkedList<T> implements List<T> {
 
     @Override
     public void add(T value) {
-        Node<T> newNode = new Node<>(null, value, null);
+        Node<T> tNode = new Node<>(last, value, null);
         if (isEmpty()) {
-            first = newNode;
-            last = newNode;
+            first = tNode;
         } else {
-            newNode.prev = last;
-            newNode.next = newNode;
-            last = newNode;
+            last.next = tNode;
         }
+        last = tNode;
         size++;
     }
 
     @Override
     public void add(T value, int index) {
         if (checkIndex(index)) {
-            Node<T> tNode = new Node<>(null, value, null);
-            if (isEmpty() || index == size()) {
+            Node<T> tNode = new Node<>(last, value, null);
+            if (isEmpty() || index == size) {
                 add(value);
             } else {
                 Node<T> indexNode = nodeIterator(index);
@@ -46,11 +46,7 @@ public class MyLinkedList<T> implements List<T> {
 
     @Override
     public T get(int index) {
-        T value = null;
-        if (checkIndex(index)) {
-            value = nodeIterator(index).item;
-        }
-        return value;
+        return nodeIterator(index).item;
     }
 
     @Override
@@ -98,8 +94,8 @@ public class MyLinkedList<T> implements List<T> {
     }
 
     private boolean checkIndex(int index) {
-        if (index < 0 && index > size) {
-            throw new IndexOutOfBoundsException();
+        if (index < 0 && index >= size) {
+            throw new NoSuchElementException();
         }
         return true;
     }
