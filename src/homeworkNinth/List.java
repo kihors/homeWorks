@@ -10,11 +10,11 @@ public interface List<T> {
 
     T get(int index);
 
-//    void set(T value, int index);
-//
-//    T remove(int index);
-//
-//    T remove(T t);
+    void set(T value, int index);
+
+    T remove(int index);
+
+    T remove(T t);
 
     int size();
 

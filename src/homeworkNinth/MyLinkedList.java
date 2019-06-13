@@ -23,15 +23,15 @@ public class MyLinkedList<T> implements List<T> {
     @Override
     public void add(T value, int index) {
         if (checkIndex(index)) {
-            Node<T> newNode = new Node<>(null, value, null);
+            Node<T> tNode = new Node<>(null, value, null);
             if (isEmpty() || index == size()) {
                 add(value);
             } else {
                 Node<T> indexNode = nodeIterator(index);
-                newNode.prev = indexNode.prev;
-                newNode.next = indexNode;
-                indexNode.prev.next = newNode;
-                indexNode.prev = newNode;
+                tNode.prev = indexNode.prev;
+                tNode.next = indexNode;
+                indexNode.prev.next = tNode;
+                indexNode.prev = tNode;
                 size++;
             }
         }
@@ -53,20 +53,39 @@ public class MyLinkedList<T> implements List<T> {
         return value;
     }
 
-//    @Override
-//    public void set(T value, int index) {
-//
-//    }
-//
-//    @Override
-//    public T remove(int index) {
-//        return null;
-//    }
-//
-//    @Override
-//    public T remove(T t) {
-//        return null;
-//    }
+    @Override
+    public void set(T value, int index) {
+        if (checkIndex(index)) {
+            nodeIterator(index).item = value;
+        }
+    }
+
+    @Override
+    public T remove(int index) {
+        T result = null;
+        if (checkIndex(index) && !isEmpty()) {
+            Node<T> tNode = nodeIterator(index);
+            result = tNode.item;
+            tNode.prev.next = tNode.next;
+            tNode.next.prev = tNode.prev;
+            tNode = null;
+            size--;
+        }
+        return result;
+    }
+
+    @Override
+    public T remove(T t) {
+        if (t != null) {
+            for (int i = 0; i < size; i++) {
+                if (t.equals(get(i))) {
+                    remove(i);
+                    return t;
+                }
+            }
+        }
+        return null;
+    }
 
     @Override
     public int size() {
@@ -78,14 +97,14 @@ public class MyLinkedList<T> implements List<T> {
         return size == 0;
     }
 
-    public boolean checkIndex(int index) {
-        if (index > 0 && index <= size) {
-            throw new IndexOutOfBoundsException("Invalid index");
+    private boolean checkIndex(int index) {
+        if (index < 0 && index > size) {
+            throw new IndexOutOfBoundsException();
         }
         return true;
     }
 
-    public Node<T> nodeIterator(int index) {
+    private Node<T> nodeIterator(int index) {
         Node<T> result = first;
         if (checkIndex(index)) {
             for (int i = 0; i < index; i++) {
