@@ -1,4 +1,4 @@
-package homeworkTwelfth;
+package com.homework.twelfth;
 
 import java.util.stream.IntStream;
 
