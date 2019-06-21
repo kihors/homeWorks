@@ -1,4 +1,4 @@
-package homeworkTenth;
+package com.homework.tenth;
 
 public class TestApp {
     public static void main(String[] args) {

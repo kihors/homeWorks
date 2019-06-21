@@ -1,4 +1,4 @@
-package homeworkTenth;
+package com.homework.tenth;
 
 public class MyHashMap<K, V> {
 
