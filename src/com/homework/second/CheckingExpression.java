@@ -1,4 +1,4 @@
-package homeworkSecond;
+package com.homework.second;
 
 public class CheckingExpression {
 
