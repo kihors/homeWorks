@@ -1,4 +1,4 @@
-package homeworkThird.secondPart;
+package com.homework.third.secondPart;
 
 public interface TextAnalyzer {
 

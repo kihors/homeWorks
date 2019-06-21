@@ -1,4 +1,4 @@
-package homeworkThird.firstPart;
+package com.homework.third.firstPart;
 
 import java.util.Arrays;
 

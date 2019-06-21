@@ -1,4 +1,4 @@
-package homeworkThird.firstPart;
+package com.homework.third.firstPart;
 
 public final class ComplexNumber {
 

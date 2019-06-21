@@ -1,4 +1,4 @@
-package homeworkThird.secondPart;
+package com.homework.third.secondPart;
 
 public class AsciiCharSequence implements CharSequence {
     private byte[] content;
