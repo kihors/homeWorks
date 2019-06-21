@@ -1,4 +1,4 @@
-package homeworkNinth;
+package com.homework.ninth;
 
 public interface List<T> {
 

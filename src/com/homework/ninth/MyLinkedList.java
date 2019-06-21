@@ -1,4 +1,4 @@
-package homeworkNinth;
+package com.homework.ninth;
 
 import java.util.NoSuchElementException;
 
