@@ -1,4 +1,4 @@
-package homewokrSixth.newRobot;
+package com.homewokr.sixth.newRobot;
 
 public class Robot {
 

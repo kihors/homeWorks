@@ -1,4 +1,4 @@
-package homewokrSixth;
+package com.homewokr.sixth;
 
 public class Car implements Cloneable {
     private String model;
