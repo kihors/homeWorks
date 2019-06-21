@@ -1,4 +1,4 @@
-package homeworkEighth;
+package com.homework.eighth;
 
 import java.util.Arrays;
 
