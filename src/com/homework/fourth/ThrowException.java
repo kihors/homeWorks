@@ -1,4 +1,4 @@
-package homeworkFourth;
+package com.homework.fourth;
 
 public class ThrowException {
 
