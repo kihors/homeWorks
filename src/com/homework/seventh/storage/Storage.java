@@ -1,4 +1,4 @@
-package homeworkSeventh.storage;
+package com.homework.seventh.storage;
 
 import java.util.ArrayList;
 

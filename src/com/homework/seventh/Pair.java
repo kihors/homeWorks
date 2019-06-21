@@ -1,4 +1,4 @@
-package homeworkSeventh;
+package com.homework.seventh;
 
 import java.util.Objects;
 
