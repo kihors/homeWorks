@@ -1,4 +1,4 @@
-package homeworkFifth.robot;
+package com.homework.fifth.robot;
 
 public class RobotConnectionException extends RuntimeException {
 

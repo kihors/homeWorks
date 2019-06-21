@@ -1,4 +1,4 @@
-package homeworkFifth.robot;
+package com.homework.fifth.robot;
 
 public interface RobotConnection extends AutoCloseable {
     void moveRobotTo(int x, int y);

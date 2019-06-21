@@ -1,4 +1,4 @@
-package homeworkFifth;
+package com.homework.fifth;
 
 import java.util.logging.Logger;
 import java.util.logging.Level;
