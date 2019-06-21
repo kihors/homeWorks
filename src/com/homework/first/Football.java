@@ -1,4 +1,4 @@
-package homeworkFirst;
+package com.homework.first;
 
 public class Football {
 
