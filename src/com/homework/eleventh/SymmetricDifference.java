@@ -1,4 +1,4 @@
-package homeworkEleventh;
+package com.homework.eleventh;
 
 import java.util.HashSet;
 import java.util.Set;
