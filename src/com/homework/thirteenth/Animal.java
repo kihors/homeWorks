@@ -22,16 +22,13 @@ public class Animal implements Serializable {
     }
 
     public static Animal[] deserializeAnimal(byte[] data) {
-
-        int countOfAnimals = 0;
-        Animal[] animals = new Animal[0];
-
+        int countOfAnimals;
+        Animal[] animals;
         ByteArrayInputStream dataInputStream = new ByteArrayInputStream(data);
         try {
             ObjectInputStream objectInputStream = new ObjectInputStream(dataInputStream);
             countOfAnimals = objectInputStream.readInt();
             animals = new Animal[countOfAnimals];
-
             for (int i = 0; i < countOfAnimals; i++) {
                 Animal animal = (Animal) objectInputStream.readObject();
                 animals[i] = animal;
