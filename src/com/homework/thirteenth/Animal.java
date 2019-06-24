@@ -23,12 +23,9 @@ public class Animal implements Serializable {
 
     public static Animal[] deserializeAnimal(byte[] data) {
         try {
-            int countOfAnimals;
-            Animal[] animals;
-            ByteArrayInputStream dataInputStream = new ByteArrayInputStream(data);
-            ObjectInputStream objectInputStream = new ObjectInputStream(dataInputStream);
-            countOfAnimals = objectInputStream.readInt();
-            animals = new Animal[countOfAnimals];
+            ObjectInputStream objectInputStream = new ObjectInputStream(new ByteArrayInputStream(data));
+            int countOfAnimals = objectInputStream.readInt();
+            Animal[] animals = new Animal[countOfAnimals];
             for (int i = 0; i < countOfAnimals; i++) {
                 Animal animal = (Animal) objectInputStream.readObject();
                 animals[i] = animal;
