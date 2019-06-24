@@ -22,10 +22,10 @@ public class Animal implements Serializable {
     }
 
     public static Animal[] deserializeAnimal(byte[] data) {
-        int countOfAnimals;
-        Animal[] animals;
-        ByteArrayInputStream dataInputStream = new ByteArrayInputStream(data);
         try {
+            int countOfAnimals;
+            Animal[] animals;
+            ByteArrayInputStream dataInputStream = new ByteArrayInputStream(data);
             ObjectInputStream objectInputStream = new ObjectInputStream(dataInputStream);
             countOfAnimals = objectInputStream.readInt();
             animals = new Animal[countOfAnimals];
@@ -33,9 +33,9 @@ public class Animal implements Serializable {
                 Animal animal = (Animal) objectInputStream.readObject();
                 animals[i] = animal;
             }
+            return animals;
         } catch (Exception e) {
             throw new IllegalArgumentException();
         }
-        return animals;
     }
 }
