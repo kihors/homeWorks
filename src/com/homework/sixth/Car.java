@@ -1,4 +1,4 @@
-package com.homewokr.sixth;
+package com.homework.sixth;
 
 public class Car implements Cloneable {
     private String model;
