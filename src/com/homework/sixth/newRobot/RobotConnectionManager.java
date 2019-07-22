@@ -1,4 +1,4 @@
-package com.homewokr.sixth.newRobot;
+package com.homework.sixth.newRobot;
 
 public interface RobotConnectionManager {
     RobotConnection getConnection();
