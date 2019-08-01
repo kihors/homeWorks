@@ -1,6 +1,6 @@
 package com.homework.tenth;
 
-public class MyHashMap<K, V> {
+public class MyHashMap<K, V> implements Map<K, V> {
 
     private Entry<K, V>[] buckets;
     private static final int INITIAL_CAPACITY = 1 << 4;

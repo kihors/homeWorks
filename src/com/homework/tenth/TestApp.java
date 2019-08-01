@@ -2,27 +2,30 @@ package com.homework.tenth;
 
 public class TestApp {
     public static void main(String[] args) {
-        MyHashMap<Integer, String > myHashMap = new MyHashMap<>();
-        myHashMap.put(1, "One");
-        myHashMap.put(2, "Two");
-        myHashMap.put(3, "Three");
-        myHashMap.put(4, "Four");
-        myHashMap.put(5, "Five");
-        myHashMap.put(6, "Six");
-        myHashMap.put(7, "Seven");
-        myHashMap.put(8, "Eight");
-        myHashMap.put(9, "Nine");
-        myHashMap.put(10, "Ten");
+        MyMap<Integer, Integer> map = new MyMap<>();
 
-        for (int i = 1; i < 100; i++) {
-            String value = "Key value is " + i;
-            myHashMap.put(i, value);
-        }
+        map.put(null, 1);
+        map.put(null, 2);
+        map.put(2, 3);
+        map.put(3, 4);
+        map.put(4, 5);
+        map.put(5, 6);
+        map.put(7, 7);
+        map.put(6, 8);
+        map.put(8, 9);
+        map.put(8, 10);
+        map.put(8, -1);
+        map.put(2, -2);
+        map.put(1, -3);
+        map.put(-1, -4);
+        map.put(-2, -5);
+        map.put(-3, -6);
+        map.put(-4, -7);
 
-        System.out.println(myHashMap.size());
-        System.out.println(myHashMap.get(5));
-        System.out.println(myHashMap.get(10));
-        System.out.println(myHashMap.get(20));
-        System.out.println(myHashMap.get(200));
+        System.out.println(map.get(-4));
+        System.out.println(map.get(null));
+        System.out.println(map.get(3));
+        System.out.println(map.get(10));
+        System.out.println(map.size());
     }
 }
