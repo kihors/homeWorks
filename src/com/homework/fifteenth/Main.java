@@ -23,10 +23,4 @@ public class Main {
         System.out.println(betDao.getAll());
 
     }
-
-
 }
-
-
-
-
