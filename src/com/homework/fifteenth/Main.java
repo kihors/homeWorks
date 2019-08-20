@@ -3,6 +3,8 @@ package com.homework.fifteenth;
 import com.homework.fifteenth.controller.ConsoleHandler;
 import com.homework.fifteenth.dao.BetDao;
 import com.homework.fifteenth.dao.BetDaoImpl;
+import com.homework.fifteenth.dao.CarDao;
+import com.homework.fifteenth.dao.CarDaoImpl;
 import com.homework.fifteenth.lib.Injector;
 
 public class Main {
@@ -15,12 +17,20 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) throws Exception {
-        System.out.println("Если хотите сделать ставку, введите \n" +
-                "сумму и риск через пробел");
-        ConsoleHandler.handle();
+    public static void main(String[] args) {
+        System.out.println("To make a bet you need to \n" +
+                "enter the amount, space and the risk, \n" +
+                "or enter 0 for to exit");
+        ConsoleHandler.handleBet();
         BetDao betDao = new BetDaoImpl();
         System.out.println(betDao.getAll());
+
+        System.out.println("To add a car you need to \n" +
+                "enter the name, space, and the power, \n" +
+                "or enter 0 for to exit");
+        ConsoleHandler.handleCar();
+        CarDao carDao = new CarDaoImpl();
+        System.out.println(carDao.getAllCar());
 
     }
 }
