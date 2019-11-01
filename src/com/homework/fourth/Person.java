@@ -1,5 +1,9 @@
 package com.homework.fourth;
 
+/*
+ * my example implementation of Pattern Builder
+ */
+
 public class Person {
 
     private String name;

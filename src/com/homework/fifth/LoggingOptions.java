@@ -6,6 +6,11 @@ import java.util.logging.Handler;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.XMLFormatter;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12774/step/8?unit=3122
+ */
+
 public class LoggingOptions {
 
     private static void configureLogging() {

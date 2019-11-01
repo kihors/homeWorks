@@ -1,5 +1,10 @@
 package com.homework.third.secondPart;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12761/step/10?unit=3109
+ */
+
 public class Palindrome {
 
     public static void main(String[] args) {

@@ -1,5 +1,10 @@
 package com.homework.second;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12759/step/6?unit=3107
+ */
+
 public class TruthVerification {
 
     public static void main(String[] args) {

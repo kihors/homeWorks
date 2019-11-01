@@ -1,5 +1,11 @@
 package com.homework.fifth.robot;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12773/step/7?unit=3121
+ * solution with try-catch-finally
+ */
+
 public class MoveRobot {
 
     public static void moveRobot(RobotConnectionManager robotConnectionManager, int toX, int toY) {

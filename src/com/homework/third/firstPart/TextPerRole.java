@@ -1,5 +1,10 @@
 package com.homework.third.firstPart;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12762/step/10?unit=3110
+ */
+
 public class TextPerRole {
 
     public static void main(String[] args) {

@@ -1,5 +1,10 @@
 package com.homework.third.secondPart;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/14513/step/8?unit=4147
+ */
+
 public class AsciiCharSequence implements CharSequence {
     private byte[] content;
 

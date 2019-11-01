@@ -1,5 +1,9 @@
 package com.homework.sixth;
 
+/*
+ * my example of deep cloning method
+ */
+
 public class Car implements Cloneable {
     private String model;
     private String color;

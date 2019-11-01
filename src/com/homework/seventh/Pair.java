@@ -2,6 +2,11 @@ package com.homework.seventh;
 
 import java.util.Objects;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12775/step/12?unit=3123
+ */
+
 class Pair<T, V> {
     private final T firstValue;
     private final V secondValue;

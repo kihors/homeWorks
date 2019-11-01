@@ -1,5 +1,10 @@
 package com.homework.third.secondPart;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/14513/step/9?unit=4147
+ */
+
 public interface TextAnalyzer {
 
     public enum Label {

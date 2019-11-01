@@ -1,5 +1,10 @@
 package com.homework.third.firstPart;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12769/step/9?unit=3117
+ */
+
 public final class ComplexNumber {
 
     private final double re;

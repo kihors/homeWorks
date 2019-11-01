@@ -3,6 +3,11 @@ package com.homework.third.secondPart;
 import java.math.BigInteger;
 import java.util.Scanner;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12762/step/8?unit=3110
+ */
+
 public class FactorialApp {
 
     public static void main(String[] args) {

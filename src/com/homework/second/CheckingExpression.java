@@ -1,5 +1,10 @@
 package com.homework.second;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12759/step/12?unit=3107
+ */
+
 public class CheckingExpression {
 
     public static void main(String[] args) {

@@ -1,5 +1,10 @@
 package com.homework.third.firstPart;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12766/step/12?unit=3114
+ */
+
 public class Robot {
 
     public static void main(String[] args) {

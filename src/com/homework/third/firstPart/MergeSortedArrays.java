@@ -2,6 +2,11 @@ package com.homework.third.firstPart;
 
 import java.util.Arrays;
 
+/*
+ * task from Stepik
+ * https://stepik.org/lesson/12762/step/9?unit=3110
+ */
+
 public class MergeSortedArrays {
 
     public static void main(String[] args) {
